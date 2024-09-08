@@ -19,9 +19,9 @@ const Navbar = () => {
     }
   }
 
-  useEffect(() => {
-    getUserById()
-  }, [])
+  // useEffect(() => {
+  //   getUserById()
+  // }, [])
 
 
   const handleLogout = () => {
@@ -35,7 +35,7 @@ const Navbar = () => {
     <div class="flex bg-[#281b06] text-gray-50 fixed top-0 left-0 right-0 p-4 justify-between px-20 shadow-md drop-shadow-md rounded-b-3xl text-xl">
       <img src={logo} alt="img" width={80} />
       <div className="flex items-center justify-center gap-10">
-        <button class="flex items-center justify-center gap-2" ><span className="text-base">({card})</span>Card </button>
+        <button class="flex items-center justify-center gap-2" ><span className="text-base">(0)</span>Card </button>
         <button onClick={handleLogout} title="Logout"> <RiLogoutCircleLine class="rotate-90 text-2xl" /></button>
       </div>
     </div>
